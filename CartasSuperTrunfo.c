@@ -58,5 +58,64 @@ int main() {
     */
     int pontosTuristicos,pontosTuristicos2;
 
+    // quebro duas linhas
+    printf("\n\n");
+    // começo perguntando a primeira carta
+    printf("Carta 1:\n");
+    // Estado (A, B, C, D, F, G ou H)
+    printf("Estado:");
+    scanf(" %c", &estado);
+    // Código (01,02,03 OU 04)
+    // Defino um limite de caracteres aserem lidos (%4s --> 4 caracteres de uma array)
+    // Não coloco o & na variavel pois a variavel já é um ponteiro (index = 0,1,2,3,...)
+    printf("Codigo:");
+    scanf(" %4s", codigo);
+    // Coloco %[^\n] para na leitura do nome ela considerar os espaco ( ^ = considerar, \n = espaco )
+    // ela só quebrara se aperta enter (\n) e não tab
+    printf("Nome da cidade:");
+    scanf(" %[^\n]",nome);
+    // Pedi a populacao (um numero inteiro, não considera os decimais)
+    printf("Populacao:");
+    scanf(" %d", &populacao);
+    // Pedi a area total (aqui considera os numeros com decimais)
+    printf("Area:");
+    scanf("%f", &area);
+    // Pedi o PIB (aqui considera os numeros com decimais)
+    printf("PIB:");
+    scanf("%f", &pib);
+    // Pedi o numero de pontos turisticos (um numero inteiro, não considera os decimais)
+    printf("Pontos Turisticos:");
+    scanf("%d",&pontosTuristicos);
+
+    // quebro duas linhas
+    printf("\n\n");
+    // começo perguntando a segunda carta
+    printf("Carta 2:\n");
+    // Estado (A, B, C, D, F, G ou H)
+    printf("Estado:");
+    scanf(" %c", &estado2);
+    // Código (01,02,03 OU 04)
+    // Defino um limite de caracteres aserem lidos (%4s --> 4 caracteres de uma array)
+    // Não coloco o & na variavel pois a variavel já é um ponteiro (index = 0,1,2,3,...)
+    printf("Codigo:");
+    scanf(" %4s", codigo2);
+    // Coloco %[^\n] para na leitura do nome ela considerar os espaco ( ^ = considerar, \n = espaco )
+    // ela só quebrara se aperta enter (\n) e não tab
+    printf("Nome da cidade:");
+    scanf(" %[^\n]",nome2);
+    // Pedi a populacao (um numero inteiro, não considera os decimais)
+    printf("Populacao:");
+    scanf(" %d", &populacao2);
+    // Pedi a area total (aqui considera os numeros com decimais)
+    printf("Area:");
+    scanf("%f", &area2);
+    // Pedi o PIB (aqui considera os numeros com decimais)
+    printf("PIB:");
+    scanf("%f", &pib2);
+    // Pedi o numero de pontos turisticos (um numero inteiro, não considera os decimais)
+    printf("Pontos Turisticos:");
+    scanf("%d",&pontosTuristicos2);
+
+
     return 0;
 }
