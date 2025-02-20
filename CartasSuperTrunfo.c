@@ -18,5 +18,45 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+    // --------------------------------------------------------------------------------------------------------------
+
+    // Mensagens de inicio
+    printf("\n");
+    printf("Programa Super Trunfo de Paises\n");
+    printf("Cadastre as cartas com informacoes sobre as cidades.\n");
+
+    //Declaro as variaveis que iram guarda as informacoes das cartas.
+
+    /*
+        variavel que ira obter o estado de A a H (Se é uma cidade de primeiro mundo ou abaixo)
+        declaro do tipo char --> caracteres
+    */
+    char estado,estado2;
+    /*
+        variavel que ira obter o codigo (depois do estado, saber o subgrupo dessa cidade)
+        declaro do tipo char(mas vai ser uma array de caracteres) --> caracteres[limite de 4 caracteres e uma quebra de linha (\n)]
+        coloquei limite [4]
+    */
+    char codigo[4],codigo2[4];
+    /*
+        essa variavel vai obter os nomes, com o limite de ate 50 caracteres
+        declaro do tipo char(mas vai ser uma array de caracteres) --> caracteres[limite de 49 caracteres e uma quebra de linha (\n)]
+    */
+    char nome[50],nome2[50];
+    /*
+        essa variavel vai obter o numero da populacao da cidade (em numero inteiro)
+    */
+    int populacao,populacao2;
+    /*
+        Declaro duas variaveis do mesmo tipo (float --> numero com ponto fluante)
+        Iram guardar o valo da area em Km e PIB(Produto Interno Bruto)
+    */
+    float area,area2;
+    float pib,pib2;
+    /*
+        E por fim uma variavel guardando o numero de pontos turisticos
+    */
+    int pontosTuristicos,pontosTuristicos2;
+
     return 0;
 }
