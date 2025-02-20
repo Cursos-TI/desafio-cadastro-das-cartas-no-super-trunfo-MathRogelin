@@ -116,6 +116,21 @@ int main() {
     printf("Pontos Turisticos:");
     scanf("%d",&pontosTuristicos2);
 
+    // quebro duas linhas
+    printf("\n\n");
+
+    printf("Cartas Cadastradas com Sucesso...\n");
+    printf("---------------------------------------------\n");
+    printf("Apresentacao das cartas:");
+    // quebro duas linhas
+    printf("\n\n");
+    // Apresentar primeira carta
+    // um detalhe uqe coloco e que nas variaveis que guardam valores decimais (float), o sinal de %f mudei para %.2f, para exibir duas casas decimais
+    printf("Carta 1:\nCodigo:%c%s\nNome:%s\nPopulacao:%d\nArea:%.2f\nPIB:%.2f\nPontos Turisticos:%d", estado,codigo,nome,populacao,area,pib,pontosTuristicos);
+    // quebro duas linhas
+    printf("\n\n");
+    // Apresentar segunda carta
+    printf("Carta 2:\nCodigo:%c%s\nNome:%s\nPopulacao:%d\nArea:%.2f\nPIB:%.2f\nPontos Turisticos:%d", estado2,codigo2,nome2,populacao2,area2,pib2,pontosTuristicos2);
 
     return 0;
 }
