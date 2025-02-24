@@ -64,64 +64,64 @@ int main() {
     // quebro duas linhas
     printf("\n\n");
     // começo perguntando a primeira carta
-    printf("Carta 1:\n");
+    printf("Carta 1\n");
     // Estado (A, B, C, D, F, G ou H)
-    printf("Estado:");
+    printf("Estado: ");
     scanf(" %c", &estado);
     // Código (01,02,03 OU 04)
     // Defino um limite de caracteres aserem lidos (%4s --> 4 caracteres de uma array)
     // Não coloco o & na variavel pois a variavel já é um ponteiro (index = 0,1,2,3,...)
-    printf("Codigo:");
+    printf("Codigo: ");
     scanf(" %4s", codigo);
     // Coloco %[^\n] para na leitura do nome ela considerar os espaco ( ^ = considerar, \n = espaco )
     // ela só quebrara se aperta enter (\n) e não tab
-    printf("Nome da cidade:");
+    printf("Nome da cidade: ");
     scanf(" %[^\n]",nome);
     // Pedi a populacao (um numero inteiro, não considera os decimais)
-    printf("Populacao:");
+    printf("Populacao: ");
     scanf(" %d", &populacao);
     // Pedi a area total (aqui considera os numeros com decimais)
-    printf("Area:");
+    printf("Area: ");
     scanf("%f", &area);
     // Pedi o PIB (aqui considera os numeros com decimais)
-    printf("PIB:");
+    printf("PIB: ");
     scanf("%f", &pib);
     // Pedi o numero de pontos turisticos (um numero inteiro, não considera os decimais)
-    printf("Pontos Turisticos:");
+    printf("Pontos Turisticos: ");
     scanf("%d",&pontosTuristicos);
-
+    // Calculando Densidade Populacional e PIB per Capita para Terceira Carta
     densidadePopulacional = populacao / area;
     pibPerCapital = pib / populacao;
 
     // quebro duas linhas
     printf("\n\n");
     // começo perguntando a segunda carta
-    printf("Carta 2:\n");
+    printf("Carta 2\n");
     // Estado (A, B, C, D, F, G ou H)
-    printf("Estado:");
+    printf("Estado: ");
     scanf(" %c", &estado2);
     // Código (01,02,03 OU 04)
     // Defino um limite de caracteres aserem lidos (%4s --> 4 caracteres de uma array)
     // Não coloco o & na variavel pois a variavel já é um ponteiro (index = 0,1,2,3,...)
-    printf("Codigo:");
+    printf("Codigo: ");
     scanf(" %4s", codigo2);
     // Coloco %[^\n] para na leitura do nome ela considerar os espaco ( ^ = considerar, \n = espaco )
     // ela só quebrara se aperta enter (\n) e não tab
-    printf("Nome da cidade:");
+    printf("Nome da cidade: ");
     scanf(" %[^\n]",nome2);
     // Pedi a populacao (um numero inteiro, não considera os decimais)
-    printf("Populacao:");
+    printf("Populacao: ");
     scanf(" %d", &populacao2);
     // Pedi a area total (aqui considera os numeros com decimais)
-    printf("Area:");
+    printf("Area: ");
     scanf("%f", &area2);
     // Pedi o PIB (aqui considera os numeros com decimais)
-    printf("PIB:");
+    printf("PIB: ");
     scanf("%f", &pib2);
     // Pedi o numero de pontos turisticos (um numero inteiro, não considera os decimais)
-    printf("Pontos Turisticos:");
+    printf("Pontos Turisticos: ");
     scanf("%d",&pontosTuristicos2);
-
+    // Calculando Densidade Populacional e PIB per Capita para segunda Carta
     densidadePopulacional2 = populacao2 / area2;
     pibPerCapital2 = pib2 / populacao2;
 
@@ -129,17 +129,17 @@ int main() {
     printf("\n\n");
 
     printf("Cartas Cadastradas com Sucesso...\n");
-    printf("---------------------------------------------\n");
-    printf("Apresentacao das cartas:");
+    printf("*******************************\n");
+    printf("Cartas:");
     // quebro duas linhas
     printf("\n\n");
     // Apresentar primeira carta
-    // um detalhe uqe coloco e que nas variaveis que guardam valores decimais (float), o sinal de %f mudei para %.2f, para exibir duas casas decimais
-    printf("Carta 1:\nCodigo:%c%s\nNome:%s\nPopulacao:%d\nArea:%.2f\nPIB:%.2f\nPontos Turisticos:%d", estado,codigo,nome,populacao,area,pib,pontosTuristicos);
+    // um detalhe que coloco e que nas variaveis que guardam valores decimais (float), o sinal de %f mudei para %.2f, para exibir duas casas decimais
+    printf("**Carta 1**\nCodigo: %c%s\nNome: %s\nPopulacao: %d\nArea: %.2f Km²\nPIB: %.2f bilhoes de reais\nPontos Turisticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais", estado,codigo,nome,populacao,area,pib,pontosTuristicos,densidadePopulacional,pibPerCapital);
     // quebro duas linhas
     printf("\n\n");
     // Apresentar segunda carta
-    printf("Carta 2:\nCodigo:%c%s\nNome:%s\nPopulacao:%d\nArea:%.2f\nPIB:%.2f\nPontos Turisticos:%d\n", estado2,codigo2,nome2,populacao2,area2,pib2,pontosTuristicos2);
+    printf("**Carta 2**\nCodigo: %c%s\nNome: %s\nPopulacao: %d\nArea: %.2f Km²\nPIB: %.2f bilhoes de reais\nPontos Turisticos: %d\nDensidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais", estado2,codigo2,nome2,populacao2,area2,pib2,pontosTuristicos2,densidadePopulacional2,pibPerCapital2);
 
     return 0;
 }
