@@ -130,7 +130,7 @@ int main() {
     // quebro duas linhas
     printf("\n\n");
     // Apresentar segunda carta
-    printf("Carta 2:\nCodigo:%c%s\nNome:%s\nPopulacao:%d\nArea:%.2f\nPIB:%.2f\nPontos Turisticos:%d", estado2,codigo2,nome2,populacao2,area2,pib2,pontosTuristicos2);
+    printf("Carta 2:\nCodigo:%c%s\nNome:%s\nPopulacao:%d\nArea:%.2f\nPIB:%.2f\nPontos Turisticos:%d\n", estado2,codigo2,nome2,populacao2,area2,pib2,pontosTuristicos2);
 
     return 0;
 }
