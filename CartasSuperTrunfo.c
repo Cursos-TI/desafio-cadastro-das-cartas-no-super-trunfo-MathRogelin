@@ -58,6 +58,9 @@ int main() {
     */
     int pontosTuristicos,pontosTuristicos2;
 
+    float densidadePopulacional,densidadePopulacional2;
+    float pibPerCapital,pibPerCapital2;
+
     // quebro duas linhas
     printf("\n\n");
     // começo perguntando a primeira carta
@@ -87,6 +90,9 @@ int main() {
     printf("Pontos Turisticos:");
     scanf("%d",&pontosTuristicos);
 
+    densidadePopulacional = populacao / area;
+    pibPerCapital = pib / populacao;
+
     // quebro duas linhas
     printf("\n\n");
     // começo perguntando a segunda carta
@@ -115,6 +121,9 @@ int main() {
     // Pedi o numero de pontos turisticos (um numero inteiro, não considera os decimais)
     printf("Pontos Turisticos:");
     scanf("%d",&pontosTuristicos2);
+
+    densidadePopulacional2 = populacao2 / area2;
+    pibPerCapital2 = pib2 / populacao2;
 
     // quebro duas linhas
     printf("\n\n");
