@@ -45,8 +45,9 @@ int main() {
     char nome[50],nome2[50];
     /*
         essa variavel vai obter o numero da populacao da cidade (em numero inteiro)
+        ela agora pode ter um armazenamento maior, mas apenas de numeros positivos e foi dobrado seu tamanho
     */
-    int populacao,populacao2;
+    unsigned long int populacao,populacao2;
     /*
         Declaro duas variaveis do mesmo tipo (float --> numero com ponto fluante)
         Iram guardar o valo da area em Km e PIB(Produto Interno Bruto)
@@ -93,6 +94,8 @@ int main() {
     densidadePopulacional = populacao / area;
     pibPerCapital = pib / populacao;
 
+    float superPoder = populacao + area + pib + pontosTuristicos + pibPerCapital - (densidadePopulacional);
+
     // quebro duas linhas
     printf("\n\n");
     // começo perguntando a segunda carta
@@ -124,6 +127,8 @@ int main() {
     // Calculando Densidade Populacional e PIB per Capita para segunda Carta
     densidadePopulacional2 = populacao2 / area2;
     pibPerCapital2 = pib2 / populacao2;
+
+    float superPoder2 = populacao2 + area2 + pib2 + pontosTuristicos2 + pibPerCapital2 - (densidadePopulacional2);
 
     // quebro duas linhas
     printf("\n\n");
