@@ -156,7 +156,7 @@ int main() {
 
     // quebro duas linhas
     printf("\n\n");
-
+    // exibindo comparacao
     printf("***Comparacoes de Cartas (0 --> Carta 2 venceu)***");
 
     // quebro duas linhas
