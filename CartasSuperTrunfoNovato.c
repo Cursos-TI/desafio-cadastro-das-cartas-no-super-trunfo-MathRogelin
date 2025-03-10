@@ -69,7 +69,7 @@ int main() {
     // Código (01,02,03 OU 04)
     // Defino um limite de caracteres aserem lidos (%4s --> 4 caracteres de uma array)
     // Não coloco o & na variavel pois a variavel já é um ponteiro (index = 0,1,2,3,...)
-    printf("Codigo(! a $): ");
+    printf("Codigo(01 a 04): ");
     scanf(" %4s", codigo);
     // Coloco %[^\n] para na leitura do nome ela considerar os espaco ( ^ = considerar, \n = espaco )
     // ela só quebrara se aperta enter (\n) e não tab
@@ -98,7 +98,7 @@ int main() {
     // Código (01,02,03 OU 04)
     // Defino um limite de caracteres aserem lidos (%4s --> 4 caracteres de uma array)
     // Não coloco o & na variavel pois a variavel já é um ponteiro (index = 0,1,2,3,...)
-    printf("Codigo(1 a 4): ");
+    printf("Codigo(01 a 04): ");
     scanf(" %4s", codigo2);
     // Coloco %[^\n] para na leitura do nome ela considerar os espaco ( ^ = considerar, \n = espaco )
     // ela só quebrara se aperta enter (\n) e não tab
